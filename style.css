@@ -1,0 +1,210 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+}
+
+header {
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    margin-right: 20px;
+    background-color: darksalmon;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn-order {
+    background-color: bisque;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: darksalmon;
+    border: 1px solid grey;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: darksalmon;
+}
+
+.hero-text {
+    margin: auto 0;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin: auto 0 0 0;
+    padding: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+}
+
+
+
+/* Products Section */
+#product h2 {
+    padding: 40px 0 0 40px;
+    text-align: center;
+}
+
+#product {
+    text-align: center;
+    background-color: bisque;
+}
+
+.products-list {
+    justify-content: space-around;
+    display: flex;
+    padding: 40px 0 0;
+}
+
+.product {
+    max-width: 300px;
+}
+
+.product img {
+    width: 100%;
+}
+
+/* TESTIMONIAL */
+
+#testimoni {
+    text-align: center;
+    background-color: rgb(212, 143, 112);
+    padding: 20px;
+}
+
+.list-testi {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.testi img {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* HUBUNGI KAMI */
+
+#contact {
+    text-align: center;
+    padding: 20px;
+}
+
+form input,
+form textarea {
+    width: 700px;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* footer */
+footer {
+    background-color: rgb(209, 134, 98);
+    color: ;
+}
+
+.social-icons img {
+    width: 20px;
+    margin: 0 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .btn-order {
+        margin-top: 10px;
+    }
+
+    #hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .btn-primary {
+        margin-bottom: 10px;
+    }
+
+    #products h2 {
+        text-align: center;
+    }
+
+    .products-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials  {
+        flex-direction: column;
+    }
+    .testimonial {
+        margin: auto;
+    }
+
+    form input,
+    form textarea {
+        width: 90%;
+    }
+}
+
